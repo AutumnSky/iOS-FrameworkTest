@@ -1,0 +1,8 @@
+/* 
+  Localizable.strings
+  MyApp
+
+  Created by MinJeong Kim on 05/10/2019.
+  Copyright © 2019 MinJeong Kim. All rights reserved.
+*/
+"HelloWorld" = "안녕하세요";
