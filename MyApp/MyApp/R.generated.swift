@@ -48,18 +48,29 @@ struct R: Rswift.Validatable {
       fileprivate init() {}
     }
     
-    /// This `R.string.localizable` struct is generated, and contains static references to 1 localization keys.
+    /// This `R.string.localizable` struct is generated, and contains static references to 2 localization keys.
     struct localizable {
-      /// en translation: Hello World English?!
+      /// en translation: R Swift English
       /// 
       /// Locales: en, ko
-      static let helloWorld = Rswift.StringResource(key: "HelloWorld", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "ko"], comment: nil)
+      static let helloWorld_R_Swift = Rswift.StringResource(key: "HelloWorld_R_Swift", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "ko"], comment: nil)
+      /// en translation: Swift Gen English
+      /// 
+      /// Locales: en, ko
+      static let helloWorld_Swift_Gen = Rswift.StringResource(key: "HelloWorld_Swift_Gen", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "ko"], comment: nil)
       
-      /// en translation: Hello World English?!
+      /// en translation: R Swift English
       /// 
       /// Locales: en, ko
-      static func helloWorld(_: Void = ()) -> String {
-        return NSLocalizedString("HelloWorld", bundle: R.hostingBundle, comment: "")
+      static func helloWorld_R_Swift(_: Void = ()) -> String {
+        return NSLocalizedString("HelloWorld_R_Swift", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Swift Gen English
+      /// 
+      /// Locales: en, ko
+      static func helloWorld_Swift_Gen(_: Void = ()) -> String {
+        return NSLocalizedString("HelloWorld_Swift_Gen", bundle: R.hostingBundle, comment: "")
       }
       
       fileprivate init() {}

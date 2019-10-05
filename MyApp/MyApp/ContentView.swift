@@ -10,13 +10,23 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-//        Text(NSLocalizedString("HelloWorld", comment: "helloworld"))
-        Text(R.string.localizable.helloWorld())
+        List {
+            Group {
+                Text(R.string.localizable.helloWorld_R_Swift())
+//                Text(NSLocalizedString("HelloWorld_Swift_Gen", comment: "a"))
+            }
+        }
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
-    }
-}
+//struct ContentView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        List {
+//            Group {
+//                Text(R.string.localizable.helloWorld_R_Swift())
+//                Text(R.string.localizable.helloWorld_R_Swift())
+//                Text(R.string.localizable.helloWorld_R_Swift())
+//            }
+//        }
+//    }
+//}

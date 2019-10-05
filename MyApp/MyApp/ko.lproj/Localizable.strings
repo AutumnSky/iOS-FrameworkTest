@@ -5,4 +5,5 @@
   Created by MinJeong Kim on 05/10/2019.
   Copyright © 2019 MinJeong Kim. All rights reserved.
 */
-"HelloWorld" = "안녕하세요?!";
+"HelloWorld_R_Swift" = "R Swift 한글";
+"HelloWorld_Swift_Gen" = "Swift Gen 한글";
