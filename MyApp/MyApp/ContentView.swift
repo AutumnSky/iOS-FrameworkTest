@@ -10,7 +10,8 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text(NSLocalizedString("HelloWorld", comment: "helloworld"))
+//        Text(NSLocalizedString("HelloWorld", comment: "helloworld"))
+        Text(R.string.localizable.helloWorld())
     }
 }
 

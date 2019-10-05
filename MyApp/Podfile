@@ -6,6 +6,7 @@ target 'MyApp' do
   use_frameworks!
 
   # Pods for MyApp
+  pod 'R.swift'
 
   target 'MyAppTests' do
     inherit! :search_paths
