@@ -1,14 +1,12 @@
 //
 //  SceneDelegate.swift
-//  MyApp
+//  FrameworkOne
 //
 //  Created by MinJeong Kim on 05/10/2019.
 //  Copyright © 2019 MinJeong Kim. All rights reserved.
 //
 
 import UIKit
-import SwiftUI
-import FrameworkOneFramework
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
@@ -19,19 +17,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
         // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
-
-        // Create the SwiftUI view that provides the window contents.
-        let contentView = ContentView()
-        let conetentView2 = ContentView2()
-//        let contentView2 = ContentView2()
-
-        // Use a UIHostingController as window root view controller.
-        if let windowScene = scene as? UIWindowScene {
-            let window = UIWindow(windowScene: windowScene)
-            window.rootViewController = UIHostingController(rootView: conetentView2)
-            self.window = window
-            window.makeKeyAndVisible()
-        }
+        guard let _ = (scene as? UIWindowScene) else { return }
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
