@@ -18,12 +18,7 @@
   "platforms": {
     "ios": "8.0"
   },
-  "source_files": "FrameworkTwo/Classes/**/*",
-  "resource_bundles": {
-    "FrameworkTwo": [
-      "FrameworkTwo/Assets/**/*"
-    ]
-  },
+  "source_files": "FrameworkTwo/**/*",
   "dependencies": {
     "R.swift": [
       "~> 5.0"

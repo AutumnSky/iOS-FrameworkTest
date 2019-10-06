@@ -26,7 +26,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   FrameworkThree: fb4ed053a31234f15a626f5461f60a5322419acb
-  FrameworkTwo: 93a5c4add779f909248c6496981ce2b80f2c4d3a
+  FrameworkTwo: 1a25913329f3c6c23c1ca6691e3e977f1587bdaf
   R.swift: f5a87643b91ea569d23d6afb3eee9c743edde239
   R.swift.Library: cfe85d569d9bae6cb262922db130e7c3a7a5fad1
   SwiftGen: f872ca75cbd17bf7103c17f13dcfa0d9a15667b0
