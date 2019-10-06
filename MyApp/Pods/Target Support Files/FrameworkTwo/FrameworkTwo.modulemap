@@ -1,0 +1,6 @@
+framework module FrameworkTwo {
+  umbrella header "FrameworkTwo-umbrella.h"
+
+  export *
+  module * { export * }
+}

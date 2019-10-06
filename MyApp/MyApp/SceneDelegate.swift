@@ -10,6 +10,7 @@ import UIKit
 import SwiftUI
 import FrameworkOneFramework
 import FrameworkThree
+import FrameworkTwo
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
@@ -26,6 +27,9 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         let conetentView1 = ContentView1()
 //        let contentView2 = ContentView2()
         let contentView3 = FrameworkThree.ContentView()
+        
+        let framework2String = StringService.getString()
+        print(framework2String)
 
         // Use a UIHostingController as window root view controller.
         if let windowScene = scene as? UIWindowScene {

@@ -6,12 +6,12 @@ target 'MyApp' do
   use_frameworks!
 
   # Pods for MyApp
-  pod 'R.swift', '~> 5.0'
-  pod 'SwiftGen', '~> 6.0'
+#  pod 'R.swift', '~> 5.0'
+#  pod 'SwiftGen', '~> 6.0'
   
   # My Framework
+  pod 'FrameworkTwo', :path => '../FrameworkTwo'
   pod 'FrameworkThree', :path => '../FrameworkThree'
-  pod 'FrameworkFour', :path => '../FrameworkFour'
 
   target 'MyAppTests' do
     inherit! :search_paths
