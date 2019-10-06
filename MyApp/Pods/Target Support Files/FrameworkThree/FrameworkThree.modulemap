@@ -1,0 +1,6 @@
+framework module FrameworkThree {
+  umbrella header "FrameworkThree-umbrella.h"
+
+  export *
+  module * { export * }
+}

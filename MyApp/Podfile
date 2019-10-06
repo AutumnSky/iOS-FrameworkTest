@@ -8,6 +8,10 @@ target 'MyApp' do
   # Pods for MyApp
   pod 'R.swift', '~> 5.0'
   pod 'SwiftGen', '~> 6.0'
+  
+  # My Framework
+  pod 'FrameworkThree', :path => '../FrameworkThree'
+  pod 'FrameworkFour', :path => '../FrameworkFour'
 
   target 'MyAppTests' do
     inherit! :search_paths

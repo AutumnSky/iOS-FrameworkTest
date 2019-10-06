@@ -9,6 +9,7 @@
 import UIKit
 import SwiftUI
 import FrameworkOneFramework
+import FrameworkThree
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
@@ -22,13 +23,14 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
         // Create the SwiftUI view that provides the window contents.
         let contentView = ContentView()
-        let conetentView2 = ContentView2()
+        let conetentView1 = ContentView1()
 //        let contentView2 = ContentView2()
+        let contentView3 = FrameworkThree.ContentView()
 
         // Use a UIHostingController as window root view controller.
         if let windowScene = scene as? UIWindowScene {
             let window = UIWindow(windowScene: windowScene)
-            window.rootViewController = UIHostingController(rootView: conetentView2)
+            window.rootViewController = UIHostingController(rootView: contentView3)
             self.window = window
             window.makeKeyAndVisible()
         }
