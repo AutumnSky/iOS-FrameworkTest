@@ -1,0 +1,8 @@
+/* 
+  Localizable.strings
+  FrameworkTwo
+
+  Created by MinJeong Kim on 06/10/2019.
+  Copyright © 2019 CocoaPods. All rights reserved.
+*/
+"helloworld" = "Example English";

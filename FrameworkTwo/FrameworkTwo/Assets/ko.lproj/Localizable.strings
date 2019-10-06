@@ -1,0 +1,8 @@
+/* 
+  Localizable.strings
+  Pods
+
+  Created by MinJeong Kim on 06/10/2019.
+  
+*/
+"helloworld" = "Framework 한글?!";

@@ -1,0 +1,6 @@
+use_frameworks!
+target 'FrameworkThree_Tests' do
+  pod 'FrameworkThree', :path => '../'
+
+  
+end

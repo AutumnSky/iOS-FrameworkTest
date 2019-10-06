@@ -1,0 +1,31 @@
+PODS:
+  - FrameworkThree (0.1.0):
+    - R.swift (~> 5.0)
+    - SwiftGen (~> 6.0)
+  - R.swift (5.0.3):
+    - R.swift.Library (~> 5.0.0)
+  - R.swift.Library (5.0.1)
+  - SwiftGen (6.1.0)
+
+DEPENDENCIES:
+  - FrameworkThree (from `../`)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - R.swift
+    - R.swift.Library
+    - SwiftGen
+
+EXTERNAL SOURCES:
+  FrameworkThree:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  FrameworkThree: 4a7495d9e72842d56c39bc2051812da8506d5cdd
+  R.swift: f5a87643b91ea569d23d6afb3eee9c743edde239
+  R.swift.Library: cfe85d569d9bae6cb262922db130e7c3a7a5fad1
+  SwiftGen: f872ca75cbd17bf7103c17f13dcfa0d9a15667b0
+
+PODFILE CHECKSUM: f2fe504e25e7ed2fec93969bcdd7204a8ff8ef90
+
+COCOAPODS: 1.7.5

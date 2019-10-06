@@ -1,0 +1,31 @@
+PODS:
+  - FrameworkTwo (0.1.0):
+    - R.swift (~> 5.0)
+    - SwiftGen (~> 6.0)
+  - R.swift (5.0.3):
+    - R.swift.Library (~> 5.0.0)
+  - R.swift.Library (5.0.1)
+  - SwiftGen (6.1.0)
+
+DEPENDENCIES:
+  - FrameworkTwo (from `../`)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - R.swift
+    - R.swift.Library
+    - SwiftGen
+
+EXTERNAL SOURCES:
+  FrameworkTwo:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  FrameworkTwo: 3abb27e18dca740ab0fee19911bacd8a13c9d336
+  R.swift: f5a87643b91ea569d23d6afb3eee9c743edde239
+  R.swift.Library: cfe85d569d9bae6cb262922db130e7c3a7a5fad1
+  SwiftGen: f872ca75cbd17bf7103c17f13dcfa0d9a15667b0
+
+PODFILE CHECKSUM: 3372125e858077f8fce2203100321e3ec24a76fd
+
+COCOAPODS: 1.7.5

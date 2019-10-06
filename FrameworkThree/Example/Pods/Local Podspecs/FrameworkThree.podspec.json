@@ -1,0 +1,30 @@
+{
+  "name": "FrameworkThree",
+  "version": "0.1.0",
+  "summary": "A short description of FrameworkThree.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/AutumnSky/FrameworkThree",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "AutumnSky": "MinJeong.Kim@deem.com"
+  },
+  "source": {
+    "git": "https://github.com/AutumnSky/FrameworkThree.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "FrameworkThree/Classes/**/*",
+  "dependencies": {
+    "R.swift": [
+      "~> 5.0"
+    ],
+    "SwiftGen": [
+      "~> 6.0"
+    ]
+  }
+}
