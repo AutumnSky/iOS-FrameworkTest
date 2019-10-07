@@ -1,3 +1,2 @@
 ${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FrameworkThree.framework
-${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FrameworkTwo.framework
 ${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Rswift.framework

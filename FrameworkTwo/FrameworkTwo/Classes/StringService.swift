@@ -20,8 +20,23 @@ public class StringService {
 //        return string
         
         // podspec에서 s.source_files = 'FrameworkTwo/**/*'으로 변경했고 이렇게 하면 모든 파일이 framework안으로 묶여서 내부 번들이 따로 생기지 않았음.
-        let bundle = Bundle.init(for: StringService.self)
-        let string = bundle.localizedString(forKey: "helloworld4", value: "novalue!", table: nil)
+//        let bundle = Bundle.init(for: StringService.self)
+//        let string = bundle.localizedString(forKey: "helloworld4", value: "novalue!", table: nil)
+//        return string
+        
+        /* s.static_framework = true
+        s.resource_bundles = {
+          'FrameworkTwo' => ['FrameworkTwo/Assets/**/*']
+        }
+        s.source_files = 'FrameworkTwo/Classes/**/*'
+        */
+        let bundlePath = Bundle.main.path(forResource: "FrameworkTwo", ofType: "bundle")!
+        let bundle = Bundle(path: bundlePath)!
+        let string = bundle.localizedString(forKey: "helloworld", value: "novalue!", table: nil)
+        
+        let Rstring = R.string.localizable.helloworld()
+        print(Rstring)
+        
         return string
     }
 }

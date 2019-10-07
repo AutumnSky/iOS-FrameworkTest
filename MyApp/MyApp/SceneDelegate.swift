@@ -30,6 +30,10 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         let framework2String = StringService.getString()
         print(framework2String)
+        
+        print(NSLocalizedString("helloworld", comment: ""))
+        
+        let bundle = Bundle.main
 
         // Use a UIHostingController as window root view controller.
         if let windowScene = scene as? UIWindowScene {

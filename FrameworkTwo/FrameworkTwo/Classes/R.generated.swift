@@ -15,6 +15,61 @@ struct R: Rswift.Validatable {
     try intern.validate()
   }
   
+  /// This `R.string` struct is generated, and contains static references to 1 localization tables.
+  struct string {
+    /// This `R.string.localizable` struct is generated, and contains static references to 4 localization keys.
+    struct localizable {
+      /// en translation: Framework English!! 2222
+      /// 
+      /// Locales: en, ko
+      static let helloworld2 = Rswift.StringResource(key: "helloworld2", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "ko"], comment: nil)
+      /// en translation: Framework English!! 3333
+      /// 
+      /// Locales: en, ko
+      static let helloworld3 = Rswift.StringResource(key: "helloworld3", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "ko"], comment: nil)
+      /// en translation: Framework English!! 4444
+      /// 
+      /// Locales: en, ko
+      static let helloworld4 = Rswift.StringResource(key: "helloworld4", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "ko"], comment: nil)
+      /// en translation: Framework English?!?!
+      /// 
+      /// Locales: en, ko
+      static let helloworld = Rswift.StringResource(key: "helloworld", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "ko"], comment: nil)
+      
+      /// en translation: Framework English!! 2222
+      /// 
+      /// Locales: en, ko
+      static func helloworld2(_: Void = ()) -> String {
+        return NSLocalizedString("helloworld2", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Framework English!! 3333
+      /// 
+      /// Locales: en, ko
+      static func helloworld3(_: Void = ()) -> String {
+        return NSLocalizedString("helloworld3", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Framework English!! 4444
+      /// 
+      /// Locales: en, ko
+      static func helloworld4(_: Void = ()) -> String {
+        return NSLocalizedString("helloworld4", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Framework English?!?!
+      /// 
+      /// Locales: en, ko
+      static func helloworld(_: Void = ()) -> String {
+        return NSLocalizedString("helloworld", bundle: R.hostingBundle, comment: "")
+      }
+      
+      fileprivate init() {}
+    }
+    
+    fileprivate init() {}
+  }
+  
   fileprivate struct intern: Rswift.Validatable {
     fileprivate static func validate() throws {
       // There are no resources to validate

@@ -30,19 +30,21 @@ TODO: Add long description of the pod here.
 
   s.ios.deployment_target = '8.0'
 
-#  s.source_files = 'FrameworkTwo/Classes/**/*'
-  s.source_files = 'FrameworkTwo/**/*'
+  s.source_files = 'FrameworkTwo/Classes/**/*'
+#  s.source_files = 'FrameworkTwo/**/*'
   
   # s.resource_bundles = {
   #   'FrameworkTwo' => ['FrameworkTwo/Assets/*.png']
   # }
-#  s.resource_bundles = {
-#    'FrameworkTwo' => ['FrameworkTwo/Assets/**/*']
-#  }
+  s.resource_bundles = {
+    'FrameworkTwo' => ['FrameworkTwo/Assets/**/*']
+  }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
   s.dependency 'R.swift', '~> 5.0'
   s.dependency 'SwiftGen', '~> 6.0'
+  
+  s.static_framework = true
 end
