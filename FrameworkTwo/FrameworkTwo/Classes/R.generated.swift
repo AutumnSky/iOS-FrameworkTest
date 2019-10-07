@@ -9,7 +9,7 @@ import Rswift
 /// This `R` struct is generated and contains references to static resources.
 struct R: Rswift.Validatable {
   fileprivate static let applicationLocale = hostingBundle.preferredLocalizations.first.flatMap(Locale.init) ?? Locale.current
-  fileprivate static let hostingBundle = Bundle(for: R.Class.self)
+  fileprivate static let hostingBundle = ResourceBundle.sharedBundle as! Bundle
   
   static func validate() throws {
     try intern.validate()
@@ -17,7 +17,7 @@ struct R: Rswift.Validatable {
   
   /// This `R.string` struct is generated, and contains static references to 1 localization tables.
   struct string {
-    /// This `R.string.localizable` struct is generated, and contains static references to 4 localization keys.
+    /// This `R.string.localizable` struct is generated, and contains static references to 5 localization keys.
     struct localizable {
       /// en translation: Framework English!! 2222
       /// 
@@ -31,6 +31,10 @@ struct R: Rswift.Validatable {
       /// 
       /// Locales: en, ko
       static let helloworld4 = Rswift.StringResource(key: "helloworld4", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "ko"], comment: nil)
+      /// en translation: Framework English!! 5555
+      /// 
+      /// Locales: en, ko
+      static let helloworld5 = Rswift.StringResource(key: "helloworld5", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "ko"], comment: nil)
       /// en translation: Framework English?!?!
       /// 
       /// Locales: en, ko
@@ -55,6 +59,13 @@ struct R: Rswift.Validatable {
       /// Locales: en, ko
       static func helloworld4(_: Void = ()) -> String {
         return NSLocalizedString("helloworld4", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Framework English!! 5555
+      /// 
+      /// Locales: en, ko
+      static func helloworld5(_: Void = ()) -> String {
+        return NSLocalizedString("helloworld5", bundle: R.hostingBundle, comment: "")
       }
       
       /// en translation: Framework English?!?!

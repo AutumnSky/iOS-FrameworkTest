@@ -34,7 +34,7 @@ public class StringService {
         let bundle = Bundle(path: bundlePath)!
         let string = bundle.localizedString(forKey: "helloworld", value: "novalue!", table: nil)
         
-        let Rstring = R.string.localizable.helloworld()
+        let Rstring = R.string.localizable.helloworld() // -> not working cause hostingBundle
         print(Rstring)
         
         return string

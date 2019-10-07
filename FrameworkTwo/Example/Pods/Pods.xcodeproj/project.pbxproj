@@ -51,6 +51,7 @@
 		60B0938274F11BBB2FD85A57A648716D /* StringService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B21770B0306F0665E48B78905C55FA3 /* StringService.swift */; };
 		6B0AE955234A399B0041AC4F /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6B0AE953234A399B0041AC4F /* Localizable.strings */; };
 		6B0AE961234A4A390041AC4F /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B0AE960234A4A390041AC4F /* R.generated.swift */; };
+		6B31A1A6234B276500CD15DE /* ResourceBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B31A1A5234B276500CD15DE /* ResourceBundle.swift */; };
 		6E761A01765BA225C8B4F58CCC14761E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 		787BDDACA624757746735CCCCAE88582 /* UICollectionView+ReuseIdentifierProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D9BEE495294B3A63397E9FC83AA578D /* UICollectionView+ReuseIdentifierProtocol.swift */; };
 		7EBD7687A4E659BCD03157CF2E9365DC /* Identifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78B969950D4785CF719BFD262CAC0D14 /* Identifier.swift */; };
@@ -168,6 +169,7 @@
 		6B0AE954234A399B0041AC4F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = FrameworkTwo/Assets/en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		6B0AE956234A39AC0041AC4F /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = FrameworkTwo/Assets/ko.lproj/Localizable.strings; sourceTree = "<group>"; };
 		6B0AE960234A4A390041AC4F /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = R.generated.swift; path = FrameworkTwo/Classes/R.generated.swift; sourceTree = "<group>"; };
+		6B31A1A5234B276500CD15DE /* ResourceBundle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ResourceBundle.swift; path = FrameworkTwo/Classes/ResourceBundle.swift; sourceTree = "<group>"; };
 		6C6F89FDCA145A79437CC64BAD1D9DEA /* R.swift.Library.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = R.swift.Library.xcconfig; sourceTree = "<group>"; };
 		7140C3F8A309CB1D3F5A2EB361628D0F /* Pods-FrameworkTwo_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FrameworkTwo_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		77B3B89203AE1F25F31AA122BEAB0B0F /* UIColor+ColorResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIColor+ColorResource.swift"; path = "Library/UIKit/UIColor+ColorResource.swift"; sourceTree = "<group>"; };
@@ -319,6 +321,7 @@
 		7B7B945DCB1373362537E52BE32A5035 /* FrameworkTwo */ = {
 			isa = PBXGroup;
 			children = (
+				6B31A1A5234B276500CD15DE /* ResourceBundle.swift */,
 				6B0AE953234A399B0041AC4F /* Localizable.strings */,
 				2A2655784047F914CF59F6327D63B2FB /* ReplaceMe.swift */,
 				4B21770B0306F0665E48B78905C55FA3 /* StringService.swift */,
@@ -666,7 +669,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\"$PODS_ROOT/R.swift/rswift\" generate \"$PODS_ROOT/../../FrameworkTwo/Classes/R.generated.swift\"\n";
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\"$PODS_ROOT/R.swift/rswift\" generate \"$PODS_ROOT/../../FrameworkTwo/Classes/R.generated.swift\"\nCODE_TO_REPLACE=\"Bundle(for: R.Class.self)\"\nCODE_REPLACEMENT=\"ResourceBundle.sharedBundle as! Bundle\"\n# replace the bundle creation in the generated code\nsed -i '' -e \"s/$CODE_TO_REPLACE/$CODE_REPLACEMENT/g\" \"$PODS_ROOT/../../FrameworkTwo/Classes/R.generated.swift\"\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -684,6 +687,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0400B608F3B8AC0E1CE65C10448DFA05 /* FrameworkTwo-dummy.m in Sources */,
+				6B31A1A6234B276500CD15DE /* ResourceBundle.swift in Sources */,
 				3CF80DB1870B2F7BA899D9294807018D /* ReplaceMe.swift in Sources */,
 				60B0938274F11BBB2FD85A57A648716D /* StringService.swift in Sources */,
 				6B0AE961234A4A390041AC4F /* R.generated.swift in Sources */,

@@ -55,6 +55,7 @@
 		5C621F6FDD2E1B37F98A8E95CF5911D6 /* R.swift.Library-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A612BAE274D3F7095D318954271CDC89 /* R.swift.Library-dummy.m */; };
 		5ED14415A3DA1053B6E3F652FE750BD2 /* FrameworkThree-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C801ABC1B3A5370F52F7D2081341DDDF /* FrameworkThree-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		60C836B592B675F4BAAFB80985E10D00 /* UINib+NibResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = D01EEF3B1E4BA929FAF178AAC03C05CC /* UINib+NibResource.swift */; };
+		6B31A1A4234B264500CD15DE /* ResourceBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B31A1A3234B264500CD15DE /* ResourceBundle.swift */; };
 		6D5ADEB3FBB80273B610FC12C8735D58 /* Data+FileResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9416ADFAA324A5F6AE1AB093EBF52AE /* Data+FileResource.swift */; };
 		72C5C7213C83ABFDC79F9ABE9E6BB9C5 /* FileResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 654B43E408FFD19E3D34C52D1FCC7E75 /* FileResource.swift */; };
 		7ADD7E44D95587678B4CE084FEB69B5A /* UIImage+ImageResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074C65B4A97E995A9A15CF006A5E1CE3 /* UIImage+ImageResource.swift */; };
@@ -212,6 +213,7 @@
 		67EDDB7BC2456CF12D1EF373277809D4 /* Pods-MyApp-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MyApp-acknowledgements.markdown"; sourceTree = "<group>"; };
 		684625585B5002628DD733354DACB30F /* Pods_MyApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A044CB2D704A053F78CBE6AA02D661D /* FrameworkTwo.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FrameworkTwo.xcconfig; sourceTree = "<group>"; };
+		6B31A1A3234B264500CD15DE /* ResourceBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ResourceBundle.swift; path = FrameworkTwo/Classes/ResourceBundle.swift; sourceTree = "<group>"; };
 		6C6F89FDCA145A79437CC64BAD1D9DEA /* R.swift.Library.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = R.swift.Library.xcconfig; sourceTree = "<group>"; };
 		71CE46593AF58C8AF6F1F1D1975F4930 /* Pods-MyAppUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MyAppUITests-acknowledgements.plist"; sourceTree = "<group>"; };
 		76D720CC00DC6D240789B52E9852978E /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
@@ -386,6 +388,7 @@
 				D0743E8739558F21BF926CA0C0168D68 /* R.generated.swift */,
 				247A83836C23594E377225189F62541E /* ReplaceMe.swift */,
 				3BB0D60BF23D12F08DDD8E0C269A4219 /* StringService.swift */,
+				6B31A1A3234B264500CD15DE /* ResourceBundle.swift */,
 				BB7B82138AE7DA291B18CA2351C8BF15 /* Pod */,
 				8E29807992F4410CB771EBD5990DCBBB /* Resources */,
 				E6DC388B2B23F7EF207E6896F6C77D85 /* Support Files */,
@@ -964,6 +967,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5361AD2F56241A1399E096707B3A78BE /* FrameworkTwo-dummy.m in Sources */,
+				6B31A1A4234B264500CD15DE /* ResourceBundle.swift in Sources */,
 				3AC02783EF17EB8DD9102F2F81814B32 /* R.generated.swift in Sources */,
 				F7E08B829CB881EE1042F00F65F7D06E /* ReplaceMe.swift in Sources */,
 				1007DD3DAC3ABAAE72ABF0224FA0C8C1 /* StringService.swift in Sources */,
